@@ -1,7 +1,7 @@
 @use "sass:map";
 
 $_private-window-classes-map: (
-    "compact": "width < 600px",
+    "mobil": "width < 600px",
     "medium": "600px <= width < 840px",
     "expanded": "840px <= width < 1200px",
     "large": "1200px <= width < 1600px",
@@ -23,8 +23,8 @@ $_private-window-classes-map: (
     }
 }
 
-@mixin on-compact {
-    @include _private-on-window-class("compact") {
+@mixin on-mobil {
+    @include _private-on-window-class("mobil") {
         @content;
     }
 }
